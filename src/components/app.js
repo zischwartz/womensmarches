@@ -4,7 +4,7 @@ require('./app.css')
 
 import Map from './map.js'
 
-
+console.log("Trump Stinks!")
 
 class App extends React.Component {
   constructor(props) {
@@ -15,7 +15,6 @@ class App extends React.Component {
 
   }
   render(){
-    console.log(this.state)
     let info_style = this.state.show_info ? {display:"block"} : {display:"none"}
     return <div id="app">
       <div id="info" style={info_style}>

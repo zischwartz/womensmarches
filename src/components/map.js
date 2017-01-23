@@ -153,7 +153,7 @@ function setup_popups(map){
     if (feature){
       map.setFilter('point-hover', ["==", 'full_place', feature.properties.full_place])
     }
-    console.log(feature)
+    // console.log(feature)
     // Populate the popup and set its coordinates
     // based on the feature found.
     let props = feature.properties
