@@ -20,12 +20,13 @@ body {
   left: 0px;
   padding: 10px 10px 0 10px;
   background-color: rgba(255, 255, 255, 0.5);
-  max-width: 300px;
+  max-width: 400px;
+  font-size: 0.85em;
   /*pointer-events: none;*/
 }
 
-#info p {
-  /*font-size: 0.9em;*/
+#info strong{
+  font-size: 1.2em;
   /*margin-bottom: 8px;*/
   /*margin-top: 8px;*/
   /*margin:5px;*/

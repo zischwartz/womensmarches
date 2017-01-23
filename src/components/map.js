@@ -56,7 +56,7 @@ export default Map;
 // -------------------
 
 function general_scale(value, zoomdiff){
-  let rad = Math.sqrt(value)/2 // sure why not
+  let rad = Math.sqrt(value)/3 // sure why not
   rad*=zoomdiff
   return Math.round(rad)
 }
