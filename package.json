@@ -8,7 +8,7 @@
     "build": "webpack",
     "build:prod": "NODE_ENV=production webpack -p",
     "jupyter": "docker run -it --rm -p 8888:8888 jupyter/datascience-notebook",
-    "deploy-gh-pages": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages"
+    "deploy-gh-pages": "git subtree push --prefix dist origin gh-pages"
   },
   "author": "Zach Schwartz",
   "license": "ISC",
