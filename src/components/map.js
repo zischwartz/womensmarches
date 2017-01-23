@@ -56,7 +56,8 @@ export default Map;
 // -------------------
 
 function general_scale(value, zoomdiff){
-  let rad = Math.sqrt(value)/3 // sure why not
+  let rad = Math.sqrt(value)/5 // sure why not
+  // let rad = value/5000
   rad*=zoomdiff
   return Math.round(rad)
 }
@@ -169,7 +170,7 @@ function setup_popups(map){
 
 // don't actually include min zoom in our zoom stops, as that would  cause the difference to be 0
 // also, I don't totally understand how the stops work. like how does it interpolate? wish it oculd juse use d3-scale
-function create_stops(zooms=[2,4,6,8,10,12,14,16], values=[1e2, 1e7], min_zoom=1){
+function create_stops(zooms=[2,4,6,8,10,12,14,16], values=[1e1, 1e4, 1e7], min_zoom=1){
   let stops = []
   for (let zoom of zooms){
     for (let value of values){
