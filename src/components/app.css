@@ -34,8 +34,19 @@ p.right {
   text-align: right;
 }
 a {
+  color: rgb(20,40,200);
   text-decoration: none;
+  padding: 2px;
+  font-weight: bold
 }
 a:visited {
-  color: blue;
+  color: rgb(20,40,200);
+}
+a:hover {
+  background-color: rgba(20,200,150,0.3);
+  color: rgb(20,40,200);
+}
+
+.mapboxgl-popup-tip, .mapboxgl-popup-content {
+
 }
