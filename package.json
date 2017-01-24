@@ -40,6 +40,7 @@
     "mapbox-gl": "^0.29.0",
     "node-ziggurat": "0.0.2",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-ga": "^2.1.2"
   }
 }

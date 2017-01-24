@@ -15,9 +15,8 @@ class Map extends React.Component {
   }
   componentDidMount(){
     if (!mapboxgl.supported()) {
-      alert('Your browser does not support Mapbox GL');
-      return
-    } else { console.log('supported!')}
+      alert('Your browser does not support Mapbox GL');return;
+    }
     make_map(this.refs.mapboxMap).then(load_data).then(([geojson, map])=> {
       window.map = map //debug
       map.addSource('data', {
