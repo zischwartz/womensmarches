@@ -25,11 +25,18 @@ body {
   /*pointer-events: none;*/
 }
 
+
+#info a.close{
+  color: black !important;
+  position: absolute;
+  padding: 5px;
+  top: 0px;
+  right:0px;
+  /*display: block;*/
+}
+
 #info strong{
   font-size: 1.2em;
-  /*margin-bottom: 8px;*/
-  /*margin-top: 8px;*/
-  /*margin:5px;*/
 }
 p.right {
   text-align: right;
@@ -46,8 +53,4 @@ a:visited {
 a:hover {
   background-color: rgba(20,200,150,0.3);
   color: rgb(20,40,200);
-}
-
-.mapboxgl-popup-tip, .mapboxgl-popup-content {
-
 }
