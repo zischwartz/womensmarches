@@ -20,7 +20,7 @@ body {
   left: 0px;
   padding: 10px 10px 0 10px;
   background-color: rgba(255, 255, 255, 0.5);
-  max-width: 400px;
+  max-width: 425px;
   font-size: 0.85em;
   /*pointer-events: none;*/
 }
@@ -33,6 +33,10 @@ body {
   top: 0px;
   right:0px;
   /*display: block;*/
+}
+
+#info div.title {
+  margin-bottom: -5px;
 }
 
 #info strong{
