@@ -132,7 +132,6 @@ export function create_feature(lng, lat, properties={}){
 // })
 
 function setup_popups(map){
-
   var popup = new mapboxgl.Popup({closeButton: false,  closeOnClick: false })
   map.on('mousedown', function(e) {
     if (!e.point){return}
@@ -149,12 +148,14 @@ function setup_popups(map){
     features.sort( (a, b)=>{
       return getDistance(e.lngLat, {lat:a.properties.lat, lng:a.properties.lng})-getDistance(e.lngLat, {lat:b.properties.lat, lng:b.properties.lng})
     })
-    // console.log(features)
+    // just take the first one, i.e. closest to click
     var feature = features[0];
-    if (feature){
-      map.setFilter('point-hover', ["==", 'full_place', feature.properties.full_place])
+    // unless it's already selected, then pick the next closest
+    if (feature.properties.full_place == map.getFilter('point-hover')[2] && features.length > 1)
+    {
+      feature = features[1]
     }
-    // console.log(feature)
+    map.setFilter('point-hover', ["==", 'full_place', feature.properties.full_place])
     // Populate the popup and set its coordinates
     // based on the feature found.
     let props = feature.properties
