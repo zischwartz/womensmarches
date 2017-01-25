@@ -1,8 +1,8 @@
 ## Women's Marches on January 21 2017 Bubble Map
-This map shows the high estimate for the size of each crowd based on <a href="https://docs.google.com/spreadsheets/d/1xa0iLqYKz8x9Yc_rfhtmSOJQ2EGgeUVjvV4A8LsIaxY/edit#gid=0">this spreadsheet</a> which is being collected by Prof <a href="https://twitter.com/djpressman">Jeremy Pressman</a> and others.
+This map shows the high estimate for the size of each crowd based on [this spreadsheet](https://docs.google.com/spreadsheets/d/1xa0iLqYKz8x9Yc_rfhtmSOJQ2EGgeUVjvV4A8LsIaxY/edit#gid=0) which is being collected by Prof [Jeremy Pressman](https://twitter.com/djpressman) and others.
 
 ### Code/Tech Notes
-After downloading the spreadsheet as a `csv`(ok, after unsuccessfully trying to use google's sheet "feeds" to load it dynamically as json), I used jupyter notebook for data processing (see `wmcrowds.ipynb`) and then `mapbox-gl-js` to actually create the map.
+After downloading the spreadsheet as a `csv`(ok, after unsuccessfully trying to use google's sheet "feeds" to load it dynamically as json), I used [jupyter notebook](http://jupyter.org/) for data processing (see [`wmcrowds.ipynb`](https://github.com/zischwartz/womensmarches/blob/master/wmcrowds.ipynb)) and then [`mapbox-gl-js`](https://github.com/mapbox/mapbox-gl-js) to actually create the map.
 
 #### Mapbox-gl-js
 `mapbox-gl-js` uses the WebGL so it's crazy fast. It also makes it relatively simple to do things like scale the displayed data by both the current zoom level and the sqrt of it's magnitude.

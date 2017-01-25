@@ -4,7 +4,7 @@ require('./app.css')
 
 import Map from './map.js'
 
-console.log("TRUMP STINKS")
+console.log("👹 TRUMP STINKS")
 
 class App extends React.Component {
   constructor(props) {
