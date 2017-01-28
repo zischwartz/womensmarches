@@ -45,6 +45,10 @@ body {
 p.right {
   text-align: right;
 }
+p.small {
+  /*font-size: 0.85em;*/
+  font-family: monospace;
+}
 a {
   color: rgb(20,40,200);
   text-decoration: none;
