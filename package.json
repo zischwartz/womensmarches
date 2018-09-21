@@ -8,6 +8,7 @@
     "build": "webpack",
     "build:prod": "NODE_ENV=production webpack -p",
     "jupyter": "docker run -it --rm -p 8888:8888 jupyter/datascience-notebook",
+    "deploy": "npm run build:prod && npm run deploy-gh-pages",
     "deploy-gh-pages": "git subtree push --prefix dist origin gh-pages"
   },
   "author": "Zach Schwartz",
@@ -37,7 +38,7 @@
   "dependencies": {
     "d3": "^4.4.1",
     "madison": "^1.0.1",
-    "mapbox-gl": "^0.29.0",
+    "mapbox-gl": "^0.49.0",
     "node-ziggurat": "0.0.2",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
